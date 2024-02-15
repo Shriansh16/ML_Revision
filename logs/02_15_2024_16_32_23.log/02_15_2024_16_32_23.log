@@ -1,0 +1,3 @@
+[ 2024-02-15 16:32:23,388 ] 21 root - INFO - initiating data ingestion
+[ 2024-02-15 16:32:23,419 ] 24 root - INFO - dataset taken as df
+[ 2024-02-15 16:32:23,419 ] 41 root - INFO - error occured in data ingestion
