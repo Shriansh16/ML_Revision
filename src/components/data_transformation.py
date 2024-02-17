@@ -24,7 +24,7 @@ class DataTransformation:
 
     def get_data_transformation(self):
         try:
-            num_features=['reading_score','writing_score']
+            num_features=['reading_score']
             cat_features=['gender','race_ethnicity','parental_level_of_education','lunch','test_preparation_course']
             logging.info("lets create pipelines")
 
@@ -58,7 +58,7 @@ class DataTransformation:
             try:
                 train_df=pd.read_csv(train_path)
                 test_df=pd.read_csv(test_path)
-                target_features='average'
+                target_features='writing_score'
                 input_train=train_df.drop(target_features,axis=1)
                 input_test=test_df.drop(target_features,axis=1)
                 transformation=self.get_data_transformation()

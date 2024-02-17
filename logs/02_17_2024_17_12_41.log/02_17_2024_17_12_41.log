@@ -1,0 +1,9 @@
+[ 2024-02-17 17:12:43,801 ] 21 root - INFO - initiating data ingestion
+[ 2024-02-17 17:12:43,816 ] 25 root - INFO - dataset taken as df
+[ 2024-02-17 17:12:43,816 ] 27 root - INFO - dividing dataset into train and test
+[ 2024-02-17 17:12:43,816 ] 29 root - INFO - dataset is successfully divided
+[ 2024-02-17 17:12:43,816 ] 30 root - INFO - saving different dataset
+[ 2024-02-17 17:12:43,832 ] 34 root - INFO - all the datasets are saved successfully
+[ 2024-02-17 17:12:43,848 ] 29 root - INFO - lets create pipelines
+[ 2024-02-17 17:12:43,863 ] 44 root - INFO - numerical and categorical pipeline successfully created
+[ 2024-02-17 17:12:45,023 ] 35 root - INFO - best model is linear_regressor with accuracy 0.9230607278374898

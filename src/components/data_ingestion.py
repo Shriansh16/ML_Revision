@@ -21,7 +21,7 @@ class DataIngestion:
         logging.info("initiating data ingestion")
         try:
             df=pd.read_csv('notebook\stud1.csv')
-            df.drop(columns=['math_score','total_score'],inplace=True)
+            df.drop(columns=['math_score'],inplace=True)
             logging.info('dataset taken as df')
             os.makedirs(os.path.dirname(self.data_ingestion_config.train_datapath),exist_ok=True)
             logging.info("dividing dataset into train and test")

@@ -1,0 +1,7 @@
+[ 2024-02-17 16:55:28,800 ] 21 root - INFO - initiating data ingestion
+[ 2024-02-17 16:55:28,816 ] 25 root - INFO - dataset taken as df
+[ 2024-02-17 16:55:28,816 ] 27 root - INFO - dividing dataset into train and test
+[ 2024-02-17 16:55:28,816 ] 29 root - INFO - dataset is successfully divided
+[ 2024-02-17 16:55:28,816 ] 30 root - INFO - saving different dataset
+[ 2024-02-17 16:55:28,832 ] 34 root - INFO - all the datasets are saved successfully
+[ 2024-02-17 16:55:28,863 ] 74 root - INFO - ERROR OCCURED IN DATA TRANSFORMATION
