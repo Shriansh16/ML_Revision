@@ -30,6 +30,14 @@ class ModelTrainer:
                     "gradient_boost":GradientBoostingRegressor(),"adaboost":AdaBoostRegressor(),'knn':KNeighborsRegressor(),
                     "decision_tree":DecisionTreeRegressor()}
             report=evaluate_model(models,X_train,y_train,X_test,y_test)
+            best_model_score=max(list(report.values()))
+            best_model_name=list(report.keys())[list(report.values()).index(best_model_score)]
+            logging.info(f"best model is {best_model_name} with accuracy {best_model_score}")
+            model=models[best_model_name]
+            model.fit(X_train,y_train)
+            save_object(self.model_trainer_trainer_config.model_path,model)
+            predicted=model.predict(X_test)
+            print(r2_score(y_test,predicted))
         except Exception as e:
             logging.info("ERROR OCCURED IN MODEL TRAINING")
             raise CustomException(e,sys)
