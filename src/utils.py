@@ -14,6 +14,10 @@ def save_object(file_path,obj):
     with open(file_path,'wb') as path:
         pickle.dump(obj,path)
 
+def load_object(file_path):
+    with open(file_path,'rb') as obj:
+        return pickle.load(obj)
+
 def evaluate_model(models,X_train,y_train,X_test,y_test):
     try:
         report={}
